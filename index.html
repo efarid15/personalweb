@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Web Profile - Zainal Farid</title>
@@ -143,7 +144,6 @@
                               </div>
                           </div>
                       
-                            <hr>
 
               </div>
 
@@ -166,36 +166,72 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
-              <a href="" class="d-block mb-4 h-200"> 
-                <img src="assets/images/portfolio/1.png" class="img-thumbnail"> 
+            <div class="col-sm-4 thumb">
+              <a href="#" class="d-block mb-4 h-200 thumbnail" data-image-id="" data-toggle="modal" data-title="haloatta.com"
+              data-image="assets/images/portfolio/1.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-target="#image-gallery"> 
+                <img src="assets/images/portfolio/1.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid rounded"> 
               </a>
             </div>
 
-            <div class="col-sm-4">
-              <a href="" class="d-block mb-4 h-200"> 
-                <img src="assets/images/portfolio/2.png" class="img-thumbnail"> 
+            <div class="col-sm-4 thumb">
+              <a href="" class="d-block mb-4 h-200 thumbnail" data-image-id="" data-toggle="modal" data-title="vendor.haloatta.com"
+              data-image="assets/images/portfolio/2.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-target="#image-gallery"> 
+                <img src="assets/images/portfolio/2.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid rounded"> 
               </a>
             </div>
 
-            <div class="col-sm-4">
-              <a href="" class="d-block mb-4 h-200"> 
-                <img src="assets/images/portfolio/3.png" class="img-thumbnail"> 
+            <div class="col-sm-4 thumb">
+              <a href="" class="d-block mb-4 h-200 thumbnail" data-image-id="" data-toggle="modal" data-title="umaroh.com"
+              data-image="assets/images/portfolio/3.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-target="#image-gallery"> 
+                <img src="assets/images/portfolio/3.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid rounded"> 
               </a>
             </div>
 
-            <div class="col-sm-4">
-              <a href="" class="d-block mb-4 h-200"> 
-                <img src="assets/images/portfolio/4.png" class="img-thumbnail"> 
+            <div class="col-sm-4 thumb">
+              <a href="" class="d-block mb-4 h-200 thumbnail" data-image-id="" data-toggle="modal" data-title="Haloatta Backoffice Finance"
+              data-image="assets/images/portfolio/4.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-target="#image-gallery"> 
+                <img src="assets/images/portfolio/4.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid rounded"> 
               </a>
             </div>
 
-            <div class="col-sm-4">
-              <a href="" class="d-block mb-4 h-200"> 
-                <img src="assets/images/portfolio/5.png" class="img-thumbnail"> 
+            <div class="col-sm-4 thumb">
+              <a href="" class="d-block mb-4 h-200 thumbnail" data-image-id="" data-toggle="modal" data-title="Dompet Haloatta"
+              data-image="assets/images/portfolio/5.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              data-target="#image-gallery"> 
+                <img src="assets/images/portfolio/5.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-thumbnail"> 
               </a>
             </div>      
         </div>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="image-gallery-title"></h4>
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><span class="oi oi-arrow-thick-left"></span>
+                      </button>
+
+                      <button type="button" id="show-next-image" class="btn btn-secondary float-right"><span class="oi oi-arrow-thick-right"></span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- End Modal-->
 
        </div>
      </section>
@@ -245,6 +281,9 @@
      </section>
      <!-- End Section Contact -->
 
+     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="oi oi-chevron-top"></span></a>
+
+
      <!-- Footer -->
      <footer>
       <div class="container text-center">
@@ -267,10 +306,10 @@
      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
       (function(){
@@ -278,5 +317,6 @@
         })();
     </script>
     <script type="text/javascript" src="assets/js/sendemail.js"></script>
+    <script type="text/javascript" src="assets/js/utils.js"></script>
   </body>
 </html>
