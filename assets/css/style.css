@@ -146,6 +146,10 @@ section {
    min-height: 800px;
 }
 
+.alertkirim {
+   padding-top: 20px;
+}
+
 footer {
    position: absolute;
    bottom: 0;
