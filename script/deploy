@@ -1,0 +1,5 @@
+#!/bin/sh
+ cd ~/personalweb
+ git pull
+ exit
+EOF
